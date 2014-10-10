@@ -1,0 +1,9 @@
+ja:
+  views:
+    users:
+      sign_in:
+        register: お国柄を調べる
+        blurb_line1: |-
+          あなたの地域の "つぶやき" に色がつく
+          そう、お国柄ならね
+        blurb_line2: ご近所さんの人間性を見てみよう
