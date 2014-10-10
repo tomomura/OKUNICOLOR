@@ -8,7 +8,7 @@ class Users::SessionsController < ApplicationController
     user = UserProvider.find_by(name: auth['provider'], uid: auth['uid']).try(:user) || User.create_with_twitter_omniauth(auth)
     session[:user_id] = user.id
 
-    redirect_to root_path
+    redirect_to timelines_maps_path
   end
 
   #
