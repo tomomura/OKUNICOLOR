@@ -33,3 +33,5 @@ bower.json
 
 # vagrant
 /.vagrant/
+
+/vendor/bundler
