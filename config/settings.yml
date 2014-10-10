@@ -12,5 +12,5 @@ test:
 production:
   <<: *defaults
   twitter:
-    consumer_key: ww70yxdqjdmcliTRVfsLQq3zq
-    consumer_secret: 3zpTFerSPz1OkHw4JhCERKWS5iEBMGi7aSbn6WtpH9AZqn4l1S
+    consumer_key: OVHHTnO0z9kFiIXb0C6ArOUmU
+    consumer_secret: 8PTmViYGYStr66Cm07bfrRXbw8Szj6auCNxzO2PFX7sMXwX3Dt
