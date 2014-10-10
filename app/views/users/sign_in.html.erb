@@ -5,8 +5,8 @@
       <%= simple_format(I18n.t('views.users.sign_in.blurb_line2')) %>
     </div>
     <div class="twitter-icon">
-      <img src="<%= asset_path 'logos/twitter_white.png' %>">
+      <img src="<%= asset_path 'logos/twitter_white.png' %>" id="twitter-icon">
     </div>
-    <%= link_to I18n.t('views.users.sign_in.register'), '/auth/twitter' %>
+    <%= link_to I18n.t('views.users.sign_in.register'), '/auth/twitter', id: 'link_register' %>
   </div>
 </div>
