@@ -47,3 +47,5 @@ gem 'omniauth-twitter'
 gem 'settingslogic'
 
 gem 'twitter'
+
+gem 'rails_12factor',  group: :production
