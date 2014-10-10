@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# ƒvƒƒ“ƒvƒg‚Ì•ÏXi’Z‚­‚·‚éj
+# ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã®å¤‰æ›´ï¼ˆçŸ­ãã™ã‚‹ï¼‰
 cat .bashrc | sed -e 's/\\u@\\h://' > .bashrc.tmp
 mv .bashrc.tmp .bashrc
 
-# ƒz[ƒ€ƒfƒBƒŒƒNƒgƒŠ‚ÉbinƒfƒBƒŒƒNƒgƒŠ‚ğì¬‚·‚é
+# ãƒ›ãƒ¼ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«binãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã™ã‚‹
 mkdir bin
 sudo chown vagrant:vagrant bin
 
