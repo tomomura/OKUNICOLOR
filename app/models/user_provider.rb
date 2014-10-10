@@ -11,6 +11,6 @@ class UserProvider < ActiveRecord::Base
 
   belongs_to :user
 
-  enum name: [ :twitter ]
+  enum name: %i(twitter)
 
 end
