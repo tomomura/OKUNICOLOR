@@ -1,3 +1,12 @@
-いけてる画面になるはず!
-
-<%= link_to t('.twitter_sign_in'), '/auth/twitter' %>
+<div id="sign-in">
+  <div class="hero-unit">
+    <div class="messages">
+      <%= simple_format(I18n.t('views.users.sign_in.blurb_line1')) %>
+      <%= simple_format(I18n.t('views.users.sign_in.blurb_line2')) %>
+    </div>
+    <div class="twitter-icon">
+      <img src="<%= asset_path 'logos/twitter_white.png' %>">
+    </div>
+    <%= link_to I18n.t('views.users.sign_in.register'), '/auth/twitter' %>
+  </div>
+</div>
