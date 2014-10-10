@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20141010175709) do
   enable_extension "plpgsql"
 
   create_table "user_providers", force: true do |t|
-    t.string   "name"
+    t.integer  "name"
     t.text     "uid"
     t.text     "token"
     t.text     "secret"

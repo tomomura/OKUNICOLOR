@@ -22,4 +22,18 @@ class User < ActiveRecord::Base
     end
   end
 
+  #
+  #=== Twitterのクライアントを作成する
+  #
+  def twitter_client
+    if provider = self.user_providers.twitter.first
+      Twitter::REST::Client.new do |config|
+        config.consumer_key        = Settings.twitter.consumer_key
+        config.consumer_secret     = Settings.twitter.consumer_secret
+        config.access_token        = provider.token
+        config.access_token_secret = provider.secret
+      end
+    end
+  end
+
 end

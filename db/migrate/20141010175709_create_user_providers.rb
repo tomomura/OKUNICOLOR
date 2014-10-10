@@ -1,7 +1,7 @@
 class CreateUserProviders < ActiveRecord::Migration
   def change
     create_table :user_providers do |t|
-      t.string :name
+      t.integer :name
       t.text :uid
       t.text :token
       t.text :secret
