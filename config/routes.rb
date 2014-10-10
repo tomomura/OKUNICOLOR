@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :timelines do
+    resources :maps, only: :index 
+  end
+
   get '/auth/:provider/callback',  to: 'users/sessions#callback'
   post '/auth/:provider/callback', to: 'users/sessions#callback'
 

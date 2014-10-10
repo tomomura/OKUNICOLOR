@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# プロンプトの変更（短くする）
 cat .bashrc | sed -e 's/\\u@\\h://' > .bashrc.tmp
 mv .bashrc.tmp .bashrc
 
-# ホームディレクトリにbinディレクトリを作成する
 mkdir bin
 sudo chown vagrant:vagrant bin
 
