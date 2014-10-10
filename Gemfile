@@ -45,3 +45,5 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 
 gem 'settingslogic'
+
+gem 'twitter'
